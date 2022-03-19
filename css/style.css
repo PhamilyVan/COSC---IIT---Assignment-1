@@ -1,0 +1,22 @@
+body{
+  margin:auto;
+  background-color:black;
+  color:white;
+}
+
+.header-class{
+  margin: 20px 0px;
+  text-align:center;
+}
+
+.navigation-bar{
+  display:flex;
+  text-align:center;
+  padding-left: 15%;
+}
+
+.navigation-column{
+  text-align:center;
+  padding: 0px 10px;
+  border: 2px solid #4d4d00;
+}
