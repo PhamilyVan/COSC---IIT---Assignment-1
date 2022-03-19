@@ -2,6 +2,16 @@ body{
   margin:auto;
 }
 
+h1{
+  font-family: 'Bungee', cursive;
+}
+
+h2{
+  text-align:center;
+  em;
+  font-size: 20px;
+}
+
 .header-class{
   margin: 20px 0px;
   text-align:center;
@@ -19,7 +29,7 @@ body{
   border: 2px solid #4d4d00;
 }
 
-.picture-container{
+.about-me-picture-container{
   display:flex;
   column-gap: 600px;
   padding-left: 250px;
