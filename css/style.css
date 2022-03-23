@@ -34,3 +34,25 @@ h2{
   column-gap: 600px;
   padding-left: 250px;
 }
+
+.Personality-result-container{
+  display:flex;
+}
+
+.personality-child{
+  margin: 0px 4px;
+  border: 2px solid black;
+  border-bottom: 0px;
+  background-color:#99ceff;
+}
+
+.Second-result-container{
+  display:flex;
+  column-gap: 512px;
+}
+
+.second-personality-child{
+  margin: 0px 4px;
+  border: 2px solid black;
+  border-top: 0px
+}
