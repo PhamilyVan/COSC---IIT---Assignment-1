@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Interest Page</title>
+
+    <link href="../css/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+
+    <style>
+      p{
+        width:1000px;
+        text-align:center;
+        margin-left:20%;
+      }
+    </style>
+
+    <style>
+      h2{
+        background-color:#ffb3b3;
+      }
+    </style>
+
+    <style>
+      p{
+        text-align:center;
+        width:1200px;
+        margin-left:10%;
+        background-color:#ffb3b3;
+      }
+    </style>
+
+  </head>
+
+  <body style="background-color:#ffdab3">
+
+    <div style="background-color:#99ceff;">
+      <header style="text-align:center;">
+        <h1 style="width: 300px; margin:20px 40%; background-color:#ffb3b3;">Project Idea</h1>
+      </header>
+    </div>
+
+    <div style="border: 2px solid black; background-color:#99ceff;">
+
+    <h2>Overview</h2>
+    <p>The project is about utilising machine learning techniques to make coffee machines able to predict, learn, and produce
+      coffee for the user automatically. To improve the accuracy of the algorithm, a mobile application will also be developed,
+      where it captures the data on when a user has coffee and what type of coffee they have. A raspberry pi that is loaded with
+      the algorithm and data, is connected to the coffee machine processor and executes the command to make coffee when it believes
+      it should. The mobile application and raspberry pi are connected via Bluetooth.</p>
+
+    <h2>Motivation</h2>
+    <p>Have you ever felt the urge to brew a cup of coffee, but were too lazy to do so? Have you ever felt rushed in the
+      morning and instead of making yourself a cup at home, you buy one on the way to work? Using a raspberry pi or Arduino,
+      we can connect our Bluetooth devices and automate our coffee machines to ensure that you never miss out on your coffee.
+      I think this project would be interesting as it would provide an insight on what a smart home could potentially look like.
+      Furthermore, smart technology has the capability to improve many aspects of a person’s life, such as convenience, where
+      some people claim that it saves them “at least 30 minutes on a daily basis” (Smiljanic Stasha, 2020). </p>
+
+    <h2>Description</h2>
+    <p>The coffee machine that we will be using is “Kogan Expresso Manual Coffee Machine” model, where it has the option to
+      brew an expresso, drip coffee, latte and cappuccinos. This is where the raspberry pi will be installed, sitting beside
+      or inside the coffee machine to facilitate Bluetooth communication between a user mobile interface with the machine. This
+      is not to say that the project will be a mobile application that allows the user to interact with the coffee machine. The
+      raspberry pi will be running an algorithm, using the Python framework, “Tensorflow”, in order to be able to utilize machine
+      learning techniques and paradigms.
+      <br></br>
+      The algorithm itself will be an unsupervised learning, whereby it determines whether its predictions are correct; and in
+      doing so, allows for the algorithm to learn patterns and consequently, improving its accuracy in the long term.
+      <br></br>
+      The mobile application will simple be a means of transferring data between the user and the coffee machine, where the
+      raspberry pi’s algorithm can learn from. The data, which is stored locally on a user’s mobile, will be very direct questions
+      such as “Did you enjoy this morning’s coffee?”, “Did I make the coffee in time?”, where these categorical data can be stored
+      directly, without the need to clean and manipulate it. These questions allow for the machine to make better decisions and to
+      be able to be more accurate in the future, which is paramount for the project.
+      <br></br>
+      The user will, upon activation of the machine and downloading of the application, will be prompted to make an estimation
+      of their current coffee routine, such as their type of coffee that they usually drink and the time in which they make their
+      coffee per day. Based on the time that the user drinks, after the first use of automation, the mobile application will
+      trigger questions as pop-ups.
+      <br></br>
+      At the beginning of use, the mobile application would send over this data to the raspberry pi daily as to try and improve
+      the algorithm’s effectiveness. In the long term, the frequency in which data is transmitted would be reduced. This may
+      be after an accuracy milestone has been achieved or after a large amount of data is gathered.
+      <br></br>
+      We will also be utilizing motion detection as just relying on the algorithm, that is based on time, quite risky in terms
+      of success. Most mobile phones have in-built motion detection. By detecting whether a user has moved their phones as a
+      sign of being woken up, it will relay that information to the raspberry pi and checks if it in an acceptable range of
+      time from its prediction to start brewing.
+      <br></br>
+      When we put it all together, when the user wakes up and decides to get their coffee, all they need to do is press the
+      dispenser button on the machine and they will get a fresh cup of coffee. It should be noted that the process of automation
+      here is not limited to when you’re about to go to work only. If the user also likes to study and drink coffee to boost
+      their productivity, they can simply go into the mobile application and adjust their times when they have coffee.
+      <br></br>
+      The only parts that require human interaction are filling up the water storage container, filling in coffee blend in
+      another compartment, and pressing the button to dispense. However, these are miniscule in terms of the time it takes to
+      blend a cup of coffee and not automating these factors will have miniscule effects on the product.
+    </p>
+
+    <h2>Tools and Technologies</h2>
+    <p>The tools required for this project would be any machine that can be operated by using buttons, such as the
+      “Kogan Expresso Manual Coffee Machine”, where the cheaper the better. We would also need a raspberry pi model 3 onwards,
+      hooked up to the coffee machine, as to collect data via a mobile application. The raspberry pi would have an algorithm,
+      written in python using the TensorFlow framework, allowing the software to utilize machine learning. The mobile
+      application used to interact with the raspberry pi would be written using React Native framework. </p>
+
+      <h2>Skills Required</h2>
+      <p>The skills required for this project include:
+        <ul style = "text-align:center; width:1200px; margin-left:10%; background-color:#ffb3b3; list-style-position: inside;">
+        <li>The knowledge of how to use React Native to create the mobile application, </li>
+        <li>The ability to code in python and use TensorFlow framework to create the algorithm for unsupervised learning and</li>
+        <li>Electrical Engineering knowledge, as to connect the raspberry pi to the coffee machine.</li>
+        </ul>
+        </p>
+      <p>I believe that both the software and hardware component of creating this project can be achieved through self-study via
+      tutorials, books and other online resources. The algorithm won’t be based on too many attributes and therefore, the
+      complexity of it will also not be that hard implement. As someone without any electrical engineering experience, the
+      process of connecting the raspberry pi to the computer chip in the coffee machine seems daunting, but as the coffee
+      machine processor is not very complex, I think that this too can be achieved through adequate research.</p>
+
+        <h2>Outcome</h2>
+        <p>If successful, the original problem of not being able to have a cup of coffee at home will be solved. There are
+          several positive outcomes that come from this automation such as saving money from buying coffee and saving time spent
+          making coffee. As the act of making coffee a daily action for many people, it’s not hard to see how different aspects
+          of one’s life can also be automated and improved. For those that enjoy taking baths, the long wait of drawing water can
+          also be automated. For those that have automatic lights that turn on based on motion, implementing this project’s
+          technology will allow for a smarter design in adapting to the current brightness of the room. It is also practical in
+          an environmental sense as the technology is optimised to minimise waste.</p>
+
+      </div>
+
+      <div class="header-class">
+        <div class="navigation-bar">
+
+          <!-- About Me Navigation -->
+          <div class="navigation-column">
+            <h1><a href="../index.html">HomePage</a></h1>
+          </div>
+
+          <!-- Interest Navigation -->
+          <div class="navigation-column">
+            <h1><a href="About_Me.html">About Me</a></h1>
+          </div>
+
+          <!-- Ideal Job Navigation -->
+          <div class="navigation-column">
+            <h1><a href="Interest.html">Interest</a></h1>
+          </div>
+
+          <!-- Personality Navigation -->
+          <div class="navigation-column">
+            <h1><a href = "Ideal_Job.html">Ideal Job</a></h1>
+          </div>
+
+          <!-- Project Ideas Navigation -->
+          <div class="navigation-column">
+            <h1><a href="Personality.html">Personality</a></h1>
+          </div>
+
+        </div>
+      </div>
+
+  </body>
+
+</html>
